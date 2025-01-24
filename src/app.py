@@ -1,7 +1,7 @@
 import streamlit as st
 from pickle import load
 
-with open("../models/best_model.pkl", "rb") as f:
+with open("best_model.pkl", "rb") as f:
     model = load(f)
 
 st.title("Medical Insurance Cost - Linear Regression")
